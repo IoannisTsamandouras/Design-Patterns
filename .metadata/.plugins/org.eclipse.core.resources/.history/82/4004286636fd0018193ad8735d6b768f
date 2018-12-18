@@ -1,0 +1,7 @@
+package training;
+
+import java.util.Observer;
+
+public class View implements Observer {
+
+}

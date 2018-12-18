@@ -1,0 +1,13 @@
+package training;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+public class Context {
+	
+	private static Map<String, List<Row>> tables = new HashMap<>();
+	
+	
+
+}

@@ -1,0 +1,22 @@
+package training;
+
+public class Document implements Element{
+	Element[] elements;
+
+	public Document() {
+		this.elements = new Element[] {
+			new Wheel("front left"), new Wheel("front right"),
+			new Wheel("back left"), new Wheel("back right"),
+			new Body(), new Engine()
+		};
+	}
+	
+	@Override
+	public void accept(final Visitor visitor) {
+	for(Element el: elements) {
+		el.accept(visitor);
+	}		
+	visitor.visit(this);		
+	}
+
+}

@@ -1,0 +1,19 @@
+package training;
+
+public class AdapterDemo {
+	
+	public static void main(String[] args) {
+		Charger batteries = new Batteries();
+		AdjustableCharger batteriesCharger = new ChargerImpl(batteries);
+		System.out.println("Batteries output is " + batteriesCharger.getOuput() + " Joules");
+		
+		Charger flashlight = new Flashlight();
+		AdjustableCharger flashlightCharger = new ChargerImpl(flashlight);
+		System.out.println("Batteries output is " + flashlightCharger.getOuput() + " Joules");
+		
+		Charger fan = new Fan();	
+		AdjustableCharger fanCharger = new ChargerImpl(fan);
+		System.out.println("Batteries output is " + fanCharger.getOuput() + " Joules");
+	}
+
+}

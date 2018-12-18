@@ -1,0 +1,10 @@
+package training;
+
+public class Flashlight implements Charger {
+
+	@Override
+	public double getOutputVolts() {
+		return 24;
+	}	
+
+}

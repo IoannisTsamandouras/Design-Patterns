@@ -1,0 +1,10 @@
+package training;
+
+public class Body implements Element {
+	
+	@Override
+	public void accept(ElementVisitor visitor) {
+		visitor.visit(this);
+	}-	
+
+}

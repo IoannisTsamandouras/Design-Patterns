@@ -1,0 +1,20 @@
+package training;
+
+public class DesktopBuilder extends ComputerBuilder {
+
+	@Override
+	public void addProcessor() {
+		parts.put("processor", "Desktop Processor");		
+	}
+
+	@Override
+	public void setupMotherboard() {
+				
+	}
+
+	@Override
+	public void addMotherboard() {
+				
+	}
+	
+}

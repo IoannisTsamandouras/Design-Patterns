@@ -1,0 +1,9 @@
+package training;
+
+public class BridgeDemo {
+	
+	public static void main(String[] args) {
+		
+	}
+
+}

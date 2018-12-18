@@ -1,0 +1,23 @@
+package training;
+
+import java.util.Observable;
+import java.util.Scanner;
+
+public class TvNewsAgency extends Observable implements Runnable {
+	private String news;
+	
+	public void setNews(String news) {
+		this.news = news;
+		setChanged();
+		notifyObservers(news);
+	}
+
+	@Override
+	public void run() {
+		while(true) {
+			String response = new Scanner(System.in).next();
+			setChanged();
+			notifyObservers(response);
+		}		
+	}		
+}

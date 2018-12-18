@@ -1,0 +1,12 @@
+package training;
+
+public class AbstractFactoryDemo {
+	
+	AbstractFactory abstractFactory = 
+			FactoryProvider.getFactory("toy");
+	
+	Animal toy = abstractFactory.getAnimal("dog");
+	
+	abstractFactory = FactoryProvider.getFactory();
+
+}

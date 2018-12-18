@@ -1,0 +1,20 @@
+package training;
+
+public class ChargerImpl implements AdjustableCharger {
+	
+	private Charger charger;
+	
+	public ChargerImpl(Charger charger) {
+		this.charger = charger;		
+	}
+
+	@Override
+	public boolean isCharging() {
+		return false;
+	}
+	
+	private double convert220to110Volt(int volt) {
+		return volt * 0.5;
+	}
+
+}

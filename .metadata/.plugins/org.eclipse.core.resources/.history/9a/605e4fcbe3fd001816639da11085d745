@@ -1,0 +1,13 @@
+package training;
+
+public class ObserverDemo {
+	
+	public static void main(String[] args) {
+		NewsAgency observable = new NewsAgency();
+		NewsChannel observer = new NewsChannel();
+		
+		observable.addObserver(observer);
+		observer.setNews("some news");
+		System.out.println("Observer: " + observer + " observable: " + observable);
+	}
+}

@@ -1,0 +1,6 @@
+package training;
+
+public interface Animal {
+	
+	public abstract String getType();
+}

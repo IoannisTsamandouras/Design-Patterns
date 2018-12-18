@@ -1,0 +1,8 @@
+package training;
+
+public interface AbstractFactory {
+	
+	AnimalFactory getAnimal(String toy);
+	ColorFactory getColor(String color);
+
+}

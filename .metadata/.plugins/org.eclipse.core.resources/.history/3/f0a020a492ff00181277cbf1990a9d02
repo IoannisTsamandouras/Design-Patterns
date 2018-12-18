@@ -1,0 +1,17 @@
+package training;
+
+public class DogToy implements Animal {
+
+	@Override
+	public String getType() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String makeSound() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

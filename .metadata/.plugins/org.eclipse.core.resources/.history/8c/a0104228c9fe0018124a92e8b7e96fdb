@@ -1,0 +1,9 @@
+package training;
+
+public class Charging {
+	
+	public static void main(String[] args) {
+		
+	}
+
+}

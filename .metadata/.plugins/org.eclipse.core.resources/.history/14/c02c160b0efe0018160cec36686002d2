@@ -1,0 +1,16 @@
+package training;
+
+import org.junit.*;
+
+public class ChainOfResponsibilityDemo {
+	
+	private static AuthProcessor getChainOfAuthProcessor() {
+		AuthProcessor oAuthProcesor = new OAuthProcessor(null);
+		return new LoginCredentialsProcessor(oAuthProcesor);
+	}
+	
+	@Test
+	
+	
+	
+}

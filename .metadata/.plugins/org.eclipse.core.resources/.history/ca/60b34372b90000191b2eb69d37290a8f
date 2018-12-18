@@ -1,0 +1,9 @@
+package training;
+
+public interface PackageState {
+	
+	public abstract void prev();
+	public abstract void next();
+	public abstract void printStatus();
+
+}

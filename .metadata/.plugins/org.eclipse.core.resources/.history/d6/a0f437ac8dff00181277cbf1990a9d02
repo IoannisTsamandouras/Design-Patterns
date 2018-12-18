@@ -1,0 +1,17 @@
+package training;
+
+public class MacOSXWindow implements Window {
+
+	@Override
+	public void setTitle(String title) {
+		System.out.println("MacOS X Window ");				
+	}
+
+	@Override
+	public void repaint() {
+		
+		System.out.println("Repainting MacOS X window...");
+				
+	}
+	
+}

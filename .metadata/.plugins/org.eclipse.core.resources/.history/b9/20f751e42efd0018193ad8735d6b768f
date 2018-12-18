@@ -1,0 +1,18 @@
+package training;
+
+public class Car implements Element{
+	Element[] elements;
+
+	public Car() {
+		this.elements = new Element[] {
+				
+		};
+	}
+	
+	@Override
+	public void accept(ElementVisitor visitor) {
+		
+		
+	}
+
+}

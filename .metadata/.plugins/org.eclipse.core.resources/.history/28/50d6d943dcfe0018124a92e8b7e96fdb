@@ -1,0 +1,37 @@
+package training;
+
+import java.util.Date;
+
+public class TaskBuilder {
+	
+	final long id;
+	String title;
+	String description;
+	boolean done;
+	Date dueDate;
+	
+	public TaskBuilder(long id, String title) {
+		this.id = id;
+		this.title = title;
+	}	
+	
+	public TaskBuilder isCompleted(boolean done) {
+		this.done = done;
+		return this;
+	}
+	
+	public TaskBuilder withDueDate(Date dueDate) {
+		this.dueDate = dueDate;
+		return this;
+	}
+
+	public TaskBuilder withDescription(String description) {
+		this.description = description;
+		return this;
+	}	
+	
+	public Task build() {
+		return new Task(this);
+	}
+
+}

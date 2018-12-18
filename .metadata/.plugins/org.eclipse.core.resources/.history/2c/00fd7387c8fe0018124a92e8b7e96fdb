@@ -1,0 +1,12 @@
+package training;
+
+public class Batteries implements Charger {
+
+	@Override
+	public double getOutputVolts() {		
+		return 12;
+	}
+
+	
+
+}

@@ -1,0 +1,11 @@
+-package training;
+
+public class ObserverDemo {
+	
+	public static void main(String[] args) {
+		Channel tv = new NewsChannel();
+		Channel radio = new NewsChannel();
+		
+		
+	}
+}

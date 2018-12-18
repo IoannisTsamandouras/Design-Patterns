@@ -1,0 +1,15 @@
+package training;
+
+import java.math.BigDecimal;
+
+public class ChristmassDiscount implements Discount {
+
+	@Override
+	public BigDecimal apply(BigDecimal arg0) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	
+
+}

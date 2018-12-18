@@ -1,0 +1,21 @@
+package training;
+
+public class Presenter {
+	
+	private Model model; 
+	private View view;
+	
+	public Presenter(Model model, View view) {
+		this.model = model;
+		this.view = view;				
+	}
+	
+	public void logIn(String password) {
+		String res = "Incorrect password";
+		
+		if(model.getPassword().equals(password)) {
+			res = "Successful log in";			
+		}
+		view.updateStatusLabel(res);
+	}
+}

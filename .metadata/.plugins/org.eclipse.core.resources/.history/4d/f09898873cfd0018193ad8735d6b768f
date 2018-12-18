@@ -1,0 +1,25 @@
+package training;
+
+public class PrintVisitor implements Visitor {
+
+	@Override
+	public void visit(Wheel wheel) {
+		System.out.println("Visiting " + wheel.getName() + " wheel...");		
+	}
+
+	@Override
+	public void visit(JsonElement engine) {
+		System.out.println("Visiting engine...");
+	}
+
+	@Override
+	public void visit(Document car) {
+		System.out.println("Visiting car...");
+	}
+
+	@Override
+	public void visit(Body body) {
+		System.out.println("Visiting body...");
+	}
+	
+}

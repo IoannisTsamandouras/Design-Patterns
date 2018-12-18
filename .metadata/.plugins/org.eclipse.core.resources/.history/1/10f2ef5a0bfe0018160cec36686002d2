@@ -1,0 +1,12 @@
+package training;
+
+public abstract class AuthenticationProcessor {
+	
+	public AuthProcessor nextProcessor;
+	
+	public AuthenticationProcessor(AuthProcessor nextProcessor) {
+		this.nextProcessor = nextProcessor;
+	} 
+	
+	public abstract boolean isAuthorized(AuthProvider authProvider);
+}

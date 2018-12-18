@@ -1,0 +1,29 @@
+package training;
+
+public class ObserverDemo {
+	
+	public static void main(String[] args) {
+		NewsAgency observable = new NewsAgency();
+		NewsChannel observer = new NewsChannel();
+		
+		observable.addObserver(observer);
+		observable.setNews("some news");
+		System.out.println("Observer: " + observer + " observable: " + observable);
+		
+		RadioNewsAgency radioObservable = new RadioNewsAgency();
+		RadioNewsChannel radioObserver = new RadioNewsChannel();
+		
+		radioObservable.addPropertyChangeListener(radioObserver);
+		radioObservable.setNews("radio news");
+		System.out.println("RadioObserver: " + radioObserver 
+				+ " RadioObservable: " + radioObservable);
+		
+		TvNewsAgency tvObservable = new TvNewsAgency();
+		TvNewsChannel tvObserver = new TvNewsChannel();
+		
+		tvObservable.addObserver(tvObserver);
+		tvObservable.setNews("TV news");
+		System.out.println("TVObserver: " + tvObserver 
+				+ " TVObservable: " + tvObservable);	
+	}
+}

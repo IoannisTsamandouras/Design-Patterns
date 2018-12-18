@@ -1,0 +1,15 @@
+package training;
+
+public class TemplateDemo {
+	
+	public static void main(String[] args) {
+		
+		ComputerBuilder laptop = new LaptopBuilder();
+		Computer computer = laptop.buildComputer();
+		computer.getParts().forEach((k,v) -> System.out.println("Part: " + k + " Value:" + v));
+		
+		ComputerBuilder desktop = new DesktopBuilder();
+		Computer 
+	}
+	
+}

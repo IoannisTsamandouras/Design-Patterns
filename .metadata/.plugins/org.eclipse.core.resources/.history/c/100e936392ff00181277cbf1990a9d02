@@ -1,0 +1,10 @@
+package training;
+
+public class Brown implements Color {
+
+	@Override
+	public String gtColor() {
+		return "brown";
+	}
+	
+}

@@ -1,0 +1,15 @@
+package training;
+
+public class MacOSXWindow implements Window {
+
+	@Override
+	public void setTitle(String title) {
+				
+	}
+
+	@Override
+	public void repaint() {
+				
+	}
+	
+}

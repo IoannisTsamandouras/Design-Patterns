@@ -1,0 +1,8 @@
+package training;
+
+public interface ElementVisitor {
+	public abstract void visit(Wheel wheel);
+	public abstract void visit(Engine engine);
+	public abstract void visit(Car car);
+	public abstract void visit(Body body);
+}

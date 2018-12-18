@@ -1,0 +1,22 @@
+package training;
+
+public class ObserverDemo {
+
+	public static void main(String[] args) {
+		
+		Channel channel = new NewsChannel();
+		
+		Agency agency = new Agency();
+		
+		agency.channels.add(channel);
+		
+		agency.addObserver(channel);
+		
+		agency.setNews(news);
+				
+		agency.removeObserver(channel);
+		
+		
+	}
+
+}

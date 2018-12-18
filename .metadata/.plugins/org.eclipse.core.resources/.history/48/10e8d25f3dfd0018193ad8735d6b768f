@@ -1,0 +1,8 @@
+package training;
+
+public interface Visitor {
+	public abstract void visit(XmlElement wheel);
+	public abstract void visit(JsonElement engine);
+	public abstract void visit(Document car);
+	public abstract void visit(Body body);
+}

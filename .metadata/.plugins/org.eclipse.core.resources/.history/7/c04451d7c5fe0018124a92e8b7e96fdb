@@ -1,0 +1,10 @@
+package training;
+
+public class Tablet implements Charger {
+
+	@Override
+	public boolean isCharging() {
+		return 
+	}
+
+}

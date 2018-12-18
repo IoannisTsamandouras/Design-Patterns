@@ -1,0 +1,11 @@
+package training;
+
+public class VisitorDemo {
+
+	public static void main(String[] args) {
+		final Car car = new Car();
+		car.accept(new DoVisitor());
+		car.accept(new PrintVisitor());
+	}
+
+}

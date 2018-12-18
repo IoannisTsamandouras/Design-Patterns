@@ -1,0 +1,8 @@
+package training;
+
+public interface Window {
+	
+	public abstract void setTitle(String title);
+	public void repaint();	
+
+}

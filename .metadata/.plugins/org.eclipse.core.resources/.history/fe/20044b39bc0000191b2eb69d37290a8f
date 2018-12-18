@@ -1,0 +1,25 @@
+package training;
+
+public class Package {
+	private PackageState state = new OrderedState();
+	
+	public PackageState getState() {
+		return state;
+	}
+	
+	public void setState(PackageState state) {
+		this.state = state;
+	}
+	
+	public void next() {
+		state.next(this);
+	}
+	
+	public void prev() {
+		state.prev(this);
+	}
+	
+	public void printStatus() {
+		state.printStatus();
+	}
+}

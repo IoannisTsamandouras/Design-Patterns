@@ -1,0 +1,18 @@
+package training;
+
+public class ColorFactory implements AbstractFactory {
+
+	@Override
+	public Animal getAnimal(String toy) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Color getColor(String color) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+
+}

@@ -1,0 +1,30 @@
+package training;
+
+import static org.junit.Assert.assertEquals;
+
+public class ObserverDemo {
+	
+	public static void main(String[] args) {
+		NewsAgency observable = new NewsAgency();
+		NewsChannel observer = new NewsChannel();
+		
+		observable.addObserver(observer);
+		observable.setNews("some news");
+		//assertEquals(observer.getNews(), "some news");
+		
+		RadioNewsAgency radioObservable = new RadioNewsAgency();
+		RadioNewsChannel radioObserver = new RadioNewsChannel();
+		
+		radioObservable.addPropertyChangeListener(radioObserver);
+		radioObservable.setNews("radio news");
+		assertEquals(radioObserver.getNews(), "radio news");
+		
+		
+		TvNewsAgency tvObservable = new TvNewsAgency();
+		TvNewsChannel tvObserver = new TvNewsChannel();
+		
+		tvObservable.addObserver(tvObserver);
+		tvObservable.setNews("TV news");		
+		assertEquals(tvObserver.getNews(), "TV news");
+	}
+}

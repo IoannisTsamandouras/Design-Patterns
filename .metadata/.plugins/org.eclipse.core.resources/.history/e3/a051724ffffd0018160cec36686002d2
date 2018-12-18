@@ -1,0 +1,20 @@
+package training;
+
+public class DoubleCheckedSingleton {
+	
+	private DoubleCheckedSingleton instance;
+	
+	private DoubleCheckedSingleton() {}
+	
+	public synchronized DoubleCheckedSingleton getInstance() {
+		if(instance == null) {
+			synchronized (DoubleCheckedSingleton.class) {
+				if(instance == null) {
+					instance = new DoubleCheckedSingleton();
+				}
+			}
+		}		
+		return instance;
+	}	
+	
+}

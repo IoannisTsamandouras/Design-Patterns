@@ -1,0 +1,8 @@
+package training;
+
+public class Row {
+
+	public Row(String string, String string2) {
+	}
+
+}

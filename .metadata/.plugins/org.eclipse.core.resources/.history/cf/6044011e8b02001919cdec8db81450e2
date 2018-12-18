@@ -1,0 +1,19 @@
+package training;
+
+public class Model {
+	
+	private String password;
+	
+	public Model() {
+		System.out.println("Model constructor...");
+		password = "test";
+	}
+
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
+}

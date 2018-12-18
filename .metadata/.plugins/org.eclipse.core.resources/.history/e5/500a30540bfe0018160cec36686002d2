@@ -1,0 +1,22 @@
+package training;
+
+public class LoginCredentialsProcessor extends AuthenticationProcessor {
+
+	public LoginCredentialsProcessor(AuthenticationProcessor nextProcessor) {
+		super(nextProcessor);
+	}
+
+	@Override
+	public boolean isAuthorized(AuthenticationProvider authProvider) {
+		if(authProvider instanceof LoginCredentialsProcessor) {
+			return Boolean.TRUE;
+		} 
+		else if(nextProcessor != null) {
+			return nextProcessor.isAuthorized(authProvider);			
+		}
+		else {
+			return Boolean.FALSE;
+		}
+	}
+
+}

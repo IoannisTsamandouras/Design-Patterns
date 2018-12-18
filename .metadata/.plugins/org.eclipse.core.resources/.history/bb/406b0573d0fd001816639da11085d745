@@ -1,0 +1,9 @@
+package training;
+
+public class ObserverDemo {
+
+	public static void main(String[] args) {	
+		
+	}
+
+}

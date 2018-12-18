@@ -1,0 +1,17 @@
+package training;
+
+import java.util.Observable;
+import java.util.Observer;
+
+public class TvNewsChannel implements Observer {
+	
+	private String news;
+
+	@Override
+	public void update(Observable obs, Object obj) {
+
+		
+	}
+	
+
+}

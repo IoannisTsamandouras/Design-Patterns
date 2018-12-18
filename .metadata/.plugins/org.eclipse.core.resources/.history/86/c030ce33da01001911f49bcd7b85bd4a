@@ -1,0 +1,9 @@
+package training;
+
+public class TextFileApplication {
+	
+	public static void main(String[] args) {
+		
+	}
+
+}

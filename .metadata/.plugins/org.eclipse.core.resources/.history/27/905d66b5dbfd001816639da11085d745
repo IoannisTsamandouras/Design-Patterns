@@ -1,0 +1,22 @@
+package training;
+
+public class ObserverDemo {
+
+	public static void main(String[] args) {
+		
+		Channel channel = new NewsChannel();
+		
+		Agency agency = new Agency();
+		agency.channels.
+		agency.addObserver(channel);
+				
+		TvNewsAgency tvNewsAgency = new TvNewsAgency();
+		
+		tvNewsAgency.addObserver((obj, arg) -> {
+			System.out.println(" Received response: " + arg);			
+		});
+		
+		new Thread(tvNewsAgency).start();
+	}
+
+}

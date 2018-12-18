@@ -1,0 +1,15 @@
+package training;
+
+public class MSWindow implements Window {
+
+	@Override
+	public void setTitle(String title) {
+			
+	}
+
+	@Override
+	public void repaint() {
+				
+	}	
+
+}

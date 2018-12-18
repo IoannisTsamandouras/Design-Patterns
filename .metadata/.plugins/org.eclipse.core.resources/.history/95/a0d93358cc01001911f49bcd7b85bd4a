@@ -1,0 +1,13 @@
+package training;
+
+public class DecoratorDemo {
+	
+	private static final Logger LOGGER = LoggerFactory.getLogger();
+	
+	public static void main(String[] args) {
+		ChristmasTree ct = new SantaClaus(new ChristmasTreeImpl());
+		
+		
+	} 
+
+}

@@ -1,0 +1,15 @@
+package training;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class TextFileOperation {
+	
+	private final List<TextFileOperation> textFileOperations = new ArrayList<>();
+	
+	public TextFileOperation(TextFileOperation textFileOperation) {
+		textFileOperations.add(textFileOperation);
+		return textFileOperation.execute();
+	}
+
+}

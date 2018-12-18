@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename field &apos;colIndex&apos; in &apos;training.Context&apos; to &apos;index&apos;&#x0D;&#x0A;- Original project: &apos;Interpreter&apos;&#x0D;&#x0A;- Original element: &apos;training.Context.colIndex&apos;&#x0D;&#x0A;- Renamed element: &apos;training.Context.index&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" delegate="false" deprecate="false" description="Rename field &apos;colIndex&apos;" flags="589826" getter="false" id="org.eclipse.jdt.ui.rename.field" input="/src&lt;training{Context.java[Context^colIndex" name="index" references="true" setter="false" stamp="1545046500697" textual="false" version="1.0"/>
+</session>

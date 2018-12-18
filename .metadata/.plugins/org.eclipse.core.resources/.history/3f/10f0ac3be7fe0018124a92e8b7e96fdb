@@ -1,0 +1,15 @@
+package training;
+
+public class MSWindow implements Window {
+
+	@Override
+	public void setTitle(String title) {
+		System.out.println("Microsoft Windows 10");			
+	}
+
+	@Override
+	public void repaint() {
+		System.out.println("Classic Window theme");				
+	}	
+
+}
